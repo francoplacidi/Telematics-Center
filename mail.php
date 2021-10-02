@@ -1,6 +1,6 @@
 <?php
 
-    //Send form data by email.
+    //Send form data by email
 
 
     $addressee = 'youremail';
