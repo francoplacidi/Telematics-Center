@@ -1,9 +1,9 @@
 <?php
 
-    //Enviar datos del formulario por email.
+    //Send form data by email.
 
 
-    $addressee = 'francoplacidi95@gmail.com';
+    $addressee = 'youremail';
 
     $institution = $_POST['unit'];
     $name = $_POST['names'];
