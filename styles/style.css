@@ -1,0 +1,25 @@
+* {
+    margin-top: 0.5%;
+}
+
+#header {
+    text-align: center;
+}
+
+img {
+    margin-bottom: 2%;
+}
+
+.node {
+    margin-right: 22%;
+}
+
+.paragraphs {
+    text-align: justify;
+    margin-top: 5%;
+}
+
+h3 {
+    text-align: center;
+    margin-top: 1%;
+}

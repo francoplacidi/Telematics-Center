@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form NUE</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous" 
+    />
+    <link rel="icon" href="img/images.ico" />
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>   
+  <body>
+    <section class="form-control-sm">
+      <div class="container">
+        <div class="form-control-sm" id="header">
+          <img src="img/images.jpg" alt="" class="img-fluid px-3 mx-3" />
+          <h2 class="">Telematics Center</h2>
+          <p class="tnnul">TNNUL (Telematics Network of the National University of England)</p>
+          <br /> 
+          <p class="node">Node enablement request:</p>
+          <br />
+          <em class="note">- To be completed by the applicant -</em>
+        </div>
+        <form action="mail.php" method="POST" id="form" class="was-validated">
+          <div class="modal-body">
+            <div class="form-group">
+              <div class="col-md-12">
+                <label for="validationCustom01" class="form-label">*Academic Unit/Institution:</label>
+                <select name="unit" id="validationCustom01" class="form-select">
+                  <option value="University of London">University of London</option>
+                  <option value="London City University">London City University</option>
+                  <option value="London Metropolitan University">London Metropolitan University</option>
+                  <option value="Imperial Collage London">Imperial Collage London</option>
+                  <option value="Middlesex University">Middlesex University</option>
+                  <option value="Greenwich University">Greenwich University</option>
+                </select>
+                <div class="valid-feedback">Looks good!</div>
+              </div> 
+              <br />
+              <div class="col-md-12">
+                <label for="validationCustom02" class="form-label">*Applicant's name:</label> 
+                <input type="name" class="form-control"  name="names" id="validationCustom02" pattern="[a-zA-Z]{2,15}+[a-zA-Z]{2,15}" required />
+                <div class="valid-feedback">Looks good!</div>
+                <div class="invalid-feedback">The name field is required (should only contain letters).</div>
+              </div>
+              <br />
+              <div class="col-md-12">
+                <label for="validationCustom03" class="form-label">*Identity Document N°:</label>
+                <input type="text" class="form-control" id="validationCustom03" name="document" pattern="[0-9]{8,10}" required />
+                <div class="valid-feedback">Looks good!</div>
+                <div class="invalid-feedback">The document field is required (it should only contain numbers).</div>
+              </div>
+              <br />
+              <div class="col-md-12">
+                <label for="validationCustom04" class="form-label">*Type:</label>
+                <select name="type" id="validationCustom04" class="form-select">
+                  <option value="DNI">DNI</option>
+                  <option value="Passport">Passport</option>
+                  <option value="CIF">CIF</option>
+                  <option value="Residence card">Residence card</option>
+                </select>
+                <div class="valid-feedback">Looks good!</div>
+              </div>
+              <br />
+              <div class="col-md-12">
+                <label for="validationCustom05" class="form-label">*Charge/function:</label>
+                <input type="text" class="form-control" id="validationCustom05" name="post" pattern="[a-zA-Z]{1,}" required />
+                <div class="valid-feedback">Looks good!</div>
+                <div class="invalid-feedback">The charge/function field is required (should only contain letters).</div>
+              </div>
+              <br />
+              <div class="col-md-12">
+                <label for="validationCustom06" class="form-label">*Character:</label>
+                <select name="character" id="validationCustom06" class="form-select">
+                  <option value="Interim">Interim</option>
+                  <option value="Ordinary">Ordinary</option>
+                </select>
+                <div class="valid-feedback">Looks good!</div>
+              </div>
+              <br />
+              <div class="col-md-12">
+                <label for="validationCustom07" class="form-label">*Email:</label>
+                <input
+                  type="email"
+                  name="mail"
+                  placeholder="example@nue.edu.ar"
+                  id="validationCustom07"
+                  required
+                  pattern=".+@nue.edu.ar"
+                  class="form-check form-control"
+                />
+                <div class="valid-feedback">Looks good!</div>
+                <div class="invalid-feedback">The email field is required (must contain domain @nue.edu.ar ).</div>
+              </div>
+              <aside class="paragraphs form-control">
+                <div class="container">
+                  <div class="row">
+                    <div class="form-control-sm">
+                      <div class="col">
+                        <h4>TNNUL Code of Conduct</h4>
+                        <br />
+                        <p>
+                          TNNUL is intended to be used for cultural purposes,
+                          academic, educational and research by persons authorized
+                          by the National University of England. All TNNUL users
+                          are responsible for respecting these guidelines and for
+                          enforcing the themselves. TNNUL is open to all teachers,
+                          researchers and University students or members of adherent
+                          institutions within the regulations established by the
+                          Academic University or Adherent institution. The node
+                          manager may not allow the access to REDUL facilities for
+                          members of other organizations, institutes, entities,
+                          etc., other than those belonging to the body where the
+                          enabled node is found, without the express authorization
+                          of the University. Nor may, without this authorization,
+                          establish means physical connection to link the enabled
+                          node with other networks or computers. The code of conduct
+                          detailed in the following points incorporates the rules of
+                          conduct of the main networks to which it is accessed
+                          through TNNUL. It has been established to remind users the
+                          purposes of TNNUL and the fact that it is not about a
+                          "secure network" and therefore should not be used for
+                          transmit confidential or sensitive data. 1. Use is
+                          prohibited of the network for commercial purposes and any
+                          other purpose other than those specially authorized by the
+                          University. 2. They should not be sent to over the network
+                          files that are too large to monopolize the communication
+                          channel for too long a period. These files should be
+                          divided into smaller sections, which should be transmitted
+                          separately. 3. Any service to third parties generated by
+                          any of the members of the institutions linked to the
+                          network must within the SAT (Third Party Services)
+                          regulations of the University. 4. The software licensed to
+                          operate on a certain site cannot be transferred through
+                          the network without the express authorization of the
+                          licensee. 5. "Chains" of letters through the mail are
+                          prohibited. email and random bulk mail. Using the network
+                          with these purposes is outside the purposes of TNNUL and
+                          may cause the rapid network saturation. 6. Since message
+                          traffic interactive programs have priority over all other
+                          types of transmissions, the extensive use of them can
+                          severely degrade the network. This Thus, applications that
+                          can make extensive use of messages Interactives are
+                          restricted to specially authorized users. 7. The use of
+                          rude or offensive language and images is prohibited. Given
+                          the the information that circulates is not strictly
+                          confidential and also there are various conference centers
+                          open to the general public, the use of expressions of this
+                          type is strictly prohibited. 8. The "hacking / cracking"
+                          of computers using TNNUL as a means of access is strictly
+                          prohibited. In the same way the attempt to penetration to
+                          other computers or account using "horsepower Trojan ",
+                          virus or any other method of" hacking. It is also
+                          prohibited the transmission of viruses through the
+                          network. 9. The distribution lists email as well as all
+                          other traffic in REDUL, may be created when they are in
+                          accordance with the objectives of TNNUL. 10. All Users
+                          must respect legal restrictions on the data transfer
+                          established in the legislation of the Republic Argentina
+                          and that of the countries to or from where the data. 11.
+                          Excessive use of the network for communications from
+                          personal type. When any user violates any of these rules,
+                          it will be reported to the institution to which it
+                          belongs. In this case the Center of Telematics reserves
+                          the right to deny access to TNNUL until both are resolved
+                          on the matter, in accordance with resolution no. 51/97.
+                        </p>
+                        <br />
+                        <input class="form-check-input" name="check" type="checkbox" id="invalidCheck" required />
+                        <label class="form-check-label" for="invalidCheck">I accept terms and conditions</label>
+                        <br />
+                        <div class="modal-footer">
+                          <button class="btn btn-primary" id="btn" name="btn">Submit</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div> 
+                </div>
+              </aside>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <?php
+        include("mail.php"); 
+    ?>
+
+    <!--script src="js/enableButton.js"></script-->
+    <script src="js/noBack.js"></script>
+    <!--script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js"
+      integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
