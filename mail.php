@@ -3,7 +3,7 @@
     //Send form data by email
 
 
-    $addressee = 'francoplacidi95@gmail.com';
+    $addressee = 'yourEmail';
 
     $institution = $_POST['unit'];
     $name = $_POST['names'];
